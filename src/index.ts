@@ -1,10 +1,8 @@
 let nota, suma, promedio, contador: number;
-contador = 1;
 suma = 0;
-while (contador <= 10) {
-  nota = Number(prompt("ingrese una nota: "));
-  suma = suma + nota;
-  contador = contador + 1;
+for (contador = 1; contador <= 5; contador++) {
+  nota = Number(prompt("Ingrese una nota: "));
+  suma += nota;
 }
-promedio = suma / 10;
-console.log("el promedio de las notas es: " + promedio);
+promedio = suma / 5;
+console.log("El promedio de las notas es: " + promedio);
